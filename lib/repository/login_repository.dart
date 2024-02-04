@@ -13,7 +13,7 @@ class LoginRepository extends Repository {
         .addAll(fdataMap.entries.map((e) => MapEntry(e.key, e.value)));
 
     final response = await _dio.post(
-        "https://tugas9faura.000webhostapp.com/pemMobile/login.php",
+        "https://flutterprauas.000webhostapp.com/login.php",
         data: formData);
     log("hasil res $response");
     Map repoResponse = {'status': false, "data": Null};
@@ -45,7 +45,7 @@ class LoginRepository extends Repository {
         .addAll(fdataMap.entries.map((e) => MapEntry(e.key, e.value)));
 
     final response = await _dio.post(
-        "https://tugas9faura.000webhostapp.com/pemMobile/logout.php",
+        "https://flutterprauas.000webhostapp.com/logout.php",
         data: formData);
     preferences.remove('session');
   }

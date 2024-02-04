@@ -23,7 +23,7 @@ class NewsRepository extends Repository {
       });
 
       Response response = await _dio.post(
-          "https://tugas9faura.000webhostapp.com/pemMobile/addNews.php",
+          "https://flutterprauas.000webhostapp.com/addNews.php",
           data: formData);
       log("Response add data :" + response.data);
       if (response.statusCode == 200) {
@@ -43,7 +43,7 @@ class NewsRepository extends Repository {
     try {
       log("AMBIL LIST");
       var response = await _dio.post(
-          "https://tugas9faura.000webhostapp.com/pemMobile/listNews.php",
+          "https://flutterprauas.000webhostapp.com/listNews.php",
           data: formData);
       log("list $response");
 
@@ -67,7 +67,7 @@ class NewsRepository extends Repository {
     try {
       log("SELECT NEWS");
       var response = await _dio.post(
-          "https://tugas9faura.000webhostapp.com/pemMobile/selectdata.php",
+          "https://flutterprauas.000webhostapp.com/selectdata.php",
           data: formData);
       log("select data $response");
 
@@ -91,7 +91,7 @@ class NewsRepository extends Repository {
     try {
       log("DELETE NEWS");
       var response = await _dio.post(
-          "https://tugas9faura.000webhostapp.com/pemMobile/deleteNews.php",
+          "https://flutterprauas.000webhostapp.com/deleteNews.php",
           data: formData);
       log("delete data $response");
 

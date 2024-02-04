@@ -18,7 +18,7 @@ class Repository {
           .addAll(fdataMap.entries.map((e) => MapEntry(e.key, e.value)));
 
       final response = await _dio.post(
-          "https://tugas9faura.000webhostapp.com/pemMobile/session.php",
+          "https://flutterprauas.000webhostapp.com/session.php",
           data: formData);
       log("check session $response");
 
